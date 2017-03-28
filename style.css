@@ -8,13 +8,13 @@ body {
   margin: 0; }
 
 .container {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0; }
 
 header {
   z-index: 3;
-  background-color: #313234;
+  background-color: blueviolet;
   height: 76px;
   border-bottom: 4px solid #E0144A;
   position: fixed;
@@ -141,7 +141,7 @@ row:before, .row:after {
   padding: 50px 0px; }
   .featured-works h3 {
     font-weight: bold;
-    font-size: 45px;
+    font-size: 43px;
     text-align: center; }
   .featured-works .fw_text {
     text-align: center; }
@@ -461,7 +461,7 @@ footer {
     text-align: center; }
 
   .benefit a h3 {
-    margin-top: 30px;
+    margin-top: 29px;
     font-size: 95%; }
   .benefit p {
     padding: 10px 50px;
@@ -470,7 +470,7 @@ footer {
     font-family: "Calibri Light", sans-serif; }
   .benefit i.fa {
     font-size: 50px;
-    color: white;
+    color: orangered;
     padding: 25px;
     background-color: #313332;
     -webkit-border-radius: 15px;
