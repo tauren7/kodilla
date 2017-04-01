@@ -1,0 +1,31 @@
+{
+  "name": "projekt",
+  "version": "1.1.1",
+  "description": "opis",
+  "main": "index.js",
+  "scripts": {
+    "test": "sprawdz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tauren7/kodilla.git"
+  },
+  "keywords": [
+    "yyyy",
+    "co",
+    "to",
+    "?"
+  ],
+  "author": "Mariusz Szpala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tauren7/kodilla/issues"
+  },
+  "homepage": "https://github.com/tauren7/kodilla#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
