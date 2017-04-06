@@ -1,0 +1,585 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+
+$picker: #313234
+$lato: "Lato", sans-serif
+$menu: "Quicksand", sans-serif
+
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius:    $radius
+	-ms-border-radius:     $radius
+	border-radius:         $radius
+
+
+body 
+	margin: 0 auto
+	font-family: 'Open Sans', sans-serif
+	box-sizing: border-box
+
+.row 
+	margin: 0
+
+.container 
+	max-width: 1200px
+	margin: 0 auto
+	padding: 0
+
+
+
+header 
+	z-index: 3
+	background-color: $picker
+	height: 76px
+	border-bottom: 4px solid #E0144A
+	position: fixed
+	width: 100%
+
+
+nav 
+	ul
+		line-height: 0
+		float: right
+		margin: 0
+		padding: 0
+		list-style-type: none
+
+
+
+	li
+		display: inline-block
+	
+	
+	a
+		display: block
+		color: #fff
+		padding: 38px 25px
+		text-decoration: none
+		text-transform: uppercase
+		font-family: $menu
+		
+		&:hover
+			color: orange
+	
+	img
+		padding: 25px 0
+
+
+
+.hero
+	width: 100%
+	height: 100vh
+	background: url(http://i.imgur.com/vp6GpAJ.jpg)
+	background-size: cover
+	background-position: center
+	background-attachment: fixed
+	margin-bottom: 100px
+	
+	
+	h1, h2
+	
+		font-size: 28px
+		text-align: left
+		margin-right: 450px
+		font-family: $lato
+		text-transform: uppercase
+
+
+	.slogan 
+	
+		color: #fff
+		float: right
+		background-color: rgba(0,0,0,0.5)
+		padding: 5px 0px 5px 30px
+		padding-left: 2%
+		margin-top: 240px
+
+
+row:before, .row:after
+	content: "" 
+	display: table 
+	clear: both 
+
+[class*="col-"]
+	float: left
+	min-height: 1px
+
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+	
+	
+.benefit
+	text-align: center
+	
+	
+	.blue:hover i
+	
+		background: #00C7E8
+	
+	
+	.blue:hover h3
+	
+		color: #00C7E8
+	a
+		color: black
+		text-decoration: none
+		text-transform: uppercase
+
+
+				
+		.fa
+			font-size: 90px
+			color: white
+			padding: 30px
+			background-color: $picker
+			width: 100px
+			height: 100px
+			+border-radius(15px)
+
+
+		h3
+			margin-top: 40px
+			font-size: 180%
+			
+			
+				
+		p
+			padding: 20px 50px
+			color: #929292
+			font-size: 130%
+			font-family: 'Calibri Light', sans-serif
+
+
+.featured-works 
+	padding: 50px 0px
+
+	h3
+		font-weight: bold
+		font-size: 45px
+		text-align: center		
+
+	.fw_text 
+		text-align: center
+
+
+.gallery [class*=col-] 
+	padding: 0
+	margin: 0
+
+.gallery 
+	padding: 50px 0px
+
+	img
+		width: 100%
+		display: block
+		height: 300px
+		object-fit: cover
+
+
+	.layer 
+		position: absolute
+		width: inherit
+		z-index: 1
+		text-align: center
+		line-height: 300px
+
+		&:hover
+			transition: 0.5s
+			background-color: rgba(0,0,0, 0.3)
+
+		&:hover i.fa
+			visibility: visible
+			cursor: pointer
+
+
+
+		i.fa
+			visibility: hidden
+			color: black
+			padding: 10px
+			margin: 6px
+			font-size: 25px
+			background-color: white
+			+border-radius(5px)
+
+
+
+.team 
+	margin: 0 auto
+	width: 100%
+
+
+	.job 
+		position: relative
+		margin: 50px auto
+		width: 180px
+
+		.layer-team 
+			position: absolute
+			width: 180px
+			height: 180px
+			+border-radius(50%)
+			text-align: center
+			line-height: 180px
+			margin: 0 auto	
+			
+			&:hover 
+				background-color: rgba(0, 0, 0, 0.5)	
+				transition: 0.4s
+			
+			&:hover h2
+				visibility: visible
+				cursor: pointer
+			
+			
+			h2 
+				visibility: hidden
+				margin: 0% auto
+				text-align: center
+				font-size: 22px
+				color: #fff
+				
+
+		.photo 
+			width: 180px
+			height: 180px
+			+border-radius(50%)
+			cursor: pointer
+			object-fit: cover
+			padding: 0px
+
+	.name
+		width: 180px
+		font-size: 22px
+		color: #5B5B5B
+		font-weight: bold
+		text-align: center
+
+
+.picture 
+	width: 100%
+	height: 500px
+	background-color: grey
+	display: block
+	overflow: hidden
+	padding-top: 20px
+
+	img 
+		width: 100%
+		height: 500px
+
+
+
+	h1 
+		width: 100%
+		display: block
+		text-transform: uppercase
+		color: #fff
+		padding: 10px 0 0 80px
+		font-size: 40px
+
+	p 
+		color: #fff
+		text-align: left
+		padding: 0px 0px 0px 50px
+		text-align: justify
+
+
+.numbers 
+	margin: 80px 0
+
+
+	h1 
+		font-size: 60px
+		font-weight: 900
+		font-family: 'Raleway', sans-serif
+		text-align: center
+		margin: 0
+
+	h4 
+		color: #00C7E8
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: 700
+		text-align: center
+
+
+.contact [class*="col-"] 
+	padding: 0px
+	margin: 0 auto
+
+
+.contact 
+	float: left
+	background-color: $picker
+	width: 100%
+	color: #fff
+	display: block
+	padding: 0px
+
+	p 
+		text-align: left
+		margin-right: 55px
+
+
+	h4 
+		margin-left: 5px	
+
+
+	h3 
+		text-align: left
+		padding: 0px 0px
+		font-size: 25px
+		text-transform: uppercase
+		position: relative
+		display: inline-block
+
+		&::after 
+			content: ""
+			position: absolute
+			width: 40px
+			left: 100%
+			top: 20px
+			border-bottom: 4px solid #fff
+			color: #fff
+
+
+		span 
+			background: $picker
+			display: inline-block
+			padding: 3px
+			position: relative
+			z-index: 10
+
+	
+	.social i 
+		text-align: center
+		font-size: 20px
+		height: 20px
+		width: 20px
+		+border-radius(5%)
+	
+	.social i.fa 
+		color: #fff
+		padding: 10px
+		background-color: #00D4F7
+		
+	
+	.social i.fa:hover 
+		background-color: #5A5A5C
+		transition-duration: 0.4s
+		cursor: pointer
+	
+
+footer 
+	text-align: center
+	background-color: #1D1F20
+	color: #fff
+	line-height: 60px
+	font-size: 20px
+
+
+
+
+@media (max-width: 767px) 
+	
+	[class*="col-"]
+		float: left
+		padding: 12px
+		width: 100%
+	
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+	
+		
+
+
+	header 
+		width: 100%
+		height: 300px
+		position: static
+	
+
+		ul 
+			float: none
+
+
+			li 
+				display: block
+				text-align: center
+				margin: 0 auto
+				padding: 0
+
+				a 
+					padding: 18px	
+	
+					&:hover a 
+						background-color: lightgreen
+	
+		img 
+			padding: 0
+			display: table
+			margin: 0 auto
+			text-align: center
+
+	
+	.hero 
+		width: 100%
+		height: 50vh
+		min-height: 300px
+		background-size: cover
+		background-position: center
+		margin-bottom: 5%
+
+	
+		h1, h2 
+			font-size: 1.1em
+			text-align: left
+			margin-right: 50%
+			font-family: 'Lato Black', sans-serif
+			text-transform: uppercase
+	
+	
+		.slogan 
+			width: 75%
+			background-color: rgba(0, 0, 0, 0.5)
+			float: right
+			text-align: left
+			margin-top: 10%
+
+
+	.photo 
+		float: left	
+	
+
+	.job 
+		float: none
+		margin: 0 auto
+	
+
+	.numbers
+		margin: 0 auto
+
+
+	.picture 
+		float: none
+		padding-top: 20px
+		height: auto
+		margin-bottom: 10%
+	
+		img 
+			margin: 0 25%
+			padding: 0px
+			width: 50%
+			height: 10%
+
+
+		h1 
+			text-align: center
+			width: 100%
+			padding: 0
+			font-size: 18px
+
+		.wrap 
+			float: left
+			text-align: left
+			padding: 0
+			margin-right: 10%
+			text-align: justify
+
+
+
+
+	.contact
+		.social
+			h1, h3, h4, p 
+				padding: 0 3%
+				margin: 3% auto
+				font-size: 15px
+
+
+	.numbers 
+	
+		h1 
+			font-size: 40px
+			font-weight: 900
+			font-family: 'Raleway', sans-serif
+			text-align: center
+			margin: 0
+
+
+	.featured-works h3 
+		font-weight: bold
+		font-size: 25px
+		text-align: center
+
+
+	
+	.benefit 
+	
+		a
+			h3 
+				margin-top: 30px
+				font-size: 95%
+
+
+		p 
+			padding: 10px 50px
+			color: #929292
+			font-size: 100%
+			font-family: 'Calibri Light', sans-serif
+
+
+		i.fa 
+			font-size: 50px
+			color: white
+			padding: 25px
+			background-color: #313332
+			+border-radius(15px)
+			width: 50px
+			height: 50px
+	
